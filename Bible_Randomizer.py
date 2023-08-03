@@ -23,6 +23,22 @@ while True:
                "Hosea", "Joel", "Amos", "Obadiah", "Jonah", "Micah",
                "Nahum", "Habakkuk", "Zephaniah", "Haggai",
                "Zechariah", "Malachi"]
+    newTest = ["Matthew", "Mark", "Luke", "John", "Acts", "Romans", "1 Corinthians",
+               "2 Corinthians", "Galatians", "Ephesians", "Philippians", "Colossians",
+               "1 Thessalonians", "2 Thessalonians", "1 Timothy", "2 Timothy",
+               "Titus", "Philemon", "Hebrews", "James", "1 Peter", "2 Peter", "1 John", "2 John",
+               "3 John", "Jude", "Revelation"]
+
+    fullBible = ["Genesis", "Exodus", "Leviticus", "Numbers","Deuteronomy", "Joshua", "Judges",
+                "Ruth", "1 Samuel", "2 Samuel", "1 Kings", "2 Kings", "1 Chronicles",
+                "2 Chronicles", "Ezra", "Nehemiah", "Esther", "Job", "Psalms", "Proverbs",
+                "Ecclesiastes", "Song of Solomon", "Isaiah", "Jeremiah", "Lamentations", "Ezekiel",
+                "Daniel", "Hosea", "Joel", "Amos", "Obadiah", "Jonah", "Micah","Nahum", "Habakkuk",
+                "Zephaniah", "Haggai", "Zechariah", "Malachi", "Matthew", "Mark", "Luke", "John",
+                "Acts", "Romans", "1 Corinthians", "2 Corinthians", "Galatians", "Ephesians",
+                "Philippians", "Colossians", "1 Thessalonians", "2 Thessalonians", "1 Timothy",
+                "2 Timothy", "Titus", "Philemon", "Hebrews", "James", "1 Peter", "2 Peter", "1 John",
+                "2 John", "3 John", "Jude", "Revelation"]
 
     tempList = []
     tempList2 = []
@@ -105,64 +121,39 @@ while True:
     # Old Testament Book Chapters
     Matthew = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
                21, 22, 23, 24, 25, 26, 27, 28]
-
     Mark = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
-
     Luke = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
             22, 23, 24]
-
     John = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
-
     Acts = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
             22, 23, 24, 25, 26, 27, 28]
-
     Romans = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
-
     Corinthians_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
-
     Corinthians_2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-
     Galatians = [1, 2, 3, 4, 5, 6]
-
     Ephesians = [1, 2, 3, 4, 5, 6]
-
     Philippians = [1, 2, 3, 4]
-
     Colossians = [1, 2, 3, 4]
-
     Thessalonians_1 = [1, 2, 3, 4, 5]
-
     Thessalonians_2 = [1, 2, 3]
-
     Timothy_1 = [1, 2, 3, 4, 5, 6]
-
     Timothy_2 = [1, 2, 3, 4]
-
     Titus = [1, 2, 3]
-
     Philemon = [1]
-
     Hebrews = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
-
     James = [1, 2, 3, 4, 5]
-
     Peter_1 = [1, 2, 3, 4, 5]
-
     Peter_2 = [1, 2, 3]
-
     John_1 = [1, 2, 3, 4, 5]
-
     John_2 = [1]
-
     John_3 = [1]
-
     Jude = [1]
-
     Revelation = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,
                   17, 18, 19, 20, 21, 22]
 
     # If user types in "Old Testament"
     if testament == "OLD TESTAMENT":
+        print("=======================================================================================")
         print("Selected: Old Testament")
         bList = []
         for b in oldTest:
@@ -2253,6 +2244,7 @@ while True:
 
     # If user types "Old" for Old Testament
     elif testament == "OLD":
+        print("=======================================================================================")
         print("Selected: Old Testament")
         bList = []
         for b in oldTest:
@@ -3297,21 +3289,5702 @@ while True:
 
     # If user types "New Testament"
     elif testament == "NEW TESTAMENT":
+        print("=======================================================================================")
         print("Selected: New Testament")
+        bList = []
+        for b in newTest:
+            for i in range(28):
+                bk = random.choice(newTest)
+            bList.append(bk)
+            # print(bList)
+            """Returns only one of the most occurring items"""
+            most1 = max(bList, key=bList.count)
+            # print(most1)
+            tempList.append(most1)
+            # print(tempList)
+            most2 = max(tempList, key=tempList.count)
+            # print(most2)
+            tempList2.append(most2)
+            # print(tempList2)
+            most3 = max(tempList2, key=tempList2.count)
+            # print(most3)
+            tempList3.append(most3)
+            # print(tempList3)
+            most4 = max(tempList3, key=tempList3.count)
+            tempList4.append(most4)
+            # print(tempList4)
+            most5 = max(tempList4, key=tempList4.count)
+            tempList5.append(most5)
+        """Prints chosen Book."""
+        print("Book: " + tempList5[0])
+
+        """The Below Block is for choosing a Chapter in Genesis."""
+        if tempList5[0] == "Matthew":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(29):
+                bookChapter = random.choice(Matthew)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Mark"""
+        if tempList5[0] == "Mark":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(17):
+                bookChapter = random.choice(Mark)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Luke"""
+        if tempList5[0] == "Luke":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(25):
+                bookChapter = random.choice(Luke)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """John"""
+        if tempList5[0] == "John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(22):
+                bookChapter = random.choice(John)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Acts"""
+        if tempList5[0] == "Acts":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(29):
+                bookChapter = random.choice(Acts)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Romans"""
+        if tempList5[0] == "Romans":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(17):
+                bookChapter = random.choice(Romans)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Corinthians"""
+        if tempList5[0] == "1 Corinthians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(17):
+                bookChapter = random.choice(Corinthians_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Corinthians"""
+        if tempList5[0] == "2 Corinthians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(14):
+                bookChapter = random.choice(Corinthians_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Galatians"""
+        if tempList5[0] == "Galatians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(7):
+                bookChapter = random.choice(Galatians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Ephesians"""
+        if tempList5[0] == "Ephesians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(7):
+                bookChapter = random.choice(Ephesians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Philippians"""
+        if tempList5[0] == "Philippians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Philippians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Colossians"""
+        if tempList5[0] == "Colossians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Colossians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Thessalonians"""
+        if tempList5[0] == "1 Thessalonians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(Thessalonians_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Thessalonians"""
+        if tempList5[0] == "2 Thessalonians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Thessalonians_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Timothy"""
+        if tempList5[0] == "1 Timothy":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(7):
+                bookChapter = random.choice(Timothy_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Timothy"""
+        if tempList5[0] == "2 Timothy":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Timothy_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Titus"""
+        if tempList5[0] == "Titus":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Titus)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Philemon"""
+        if tempList5[0] == "Philemon":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(Philemon)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Hebrews"""
+        if tempList5[0] == "Hebrews":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(14):
+                bookChapter = random.choice(Hebrews)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """James"""
+        if tempList5[0] == "James":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(James)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Peter"""
+        if tempList5[0] == "1 Peter":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(Peter_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Peter"""
+        if tempList5[0] == "2 Peter":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Peter_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 John"""
+        if tempList5[0] == "1 John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(John_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 John"""
+        if tempList5[0] == "2 John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(John_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """3 John"""
+        if tempList5[0] == "3 John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(John_3)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Jude"""
+        if tempList5[0] == "Jude":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(Jude)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Revelation"""
+        if tempList5[0] == "Revelation":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(23):
+                bookChapter = random.choice(Revelation)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+    # If user types "New" for New Testament
     elif testament == "NEW":
+        print("=======================================================================================")
         print("Selected: New Testament")
+        bList = []
+        for b in newTest:
+            for i in range(28):
+                bk = random.choice(newTest)
+            bList.append(bk)
+            # print(bList)
+            """Returns only one of the most occurring items"""
+            most1 = max(bList, key=bList.count)
+            # print(most1)
+            tempList.append(most1)
+            # print(tempList)
+            most2 = max(tempList, key=tempList.count)
+            # print(most2)
+            tempList2.append(most2)
+            # print(tempList2)
+            most3 = max(tempList2, key=tempList2.count)
+            # print(most3)
+            tempList3.append(most3)
+            # print(tempList3)
+            most4 = max(tempList3, key=tempList3.count)
+            tempList4.append(most4)
+            # print(tempList4)
+            most5 = max(tempList4, key=tempList4.count)
+            tempList5.append(most5)
+        """Prints chosen Book."""
+        print("Book: " + tempList5[0])
+
+        """The Below Block is for choosing a Chapter in Matthew."""
+        if tempList5[0] == "Matthew":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(29):
+                bookChapter = random.choice(Matthew)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Mark"""
+        if tempList5[0] == "Mark":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(17):
+                bookChapter = random.choice(Mark)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Luke"""
+        if tempList5[0] == "Luke":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(25):
+                bookChapter = random.choice(Luke)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """John"""
+        if tempList5[0] == "John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(22):
+                bookChapter = random.choice(John)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Acts"""
+        if tempList5[0] == "Acts":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(29):
+                bookChapter = random.choice(Acts)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Romans"""
+        if tempList5[0] == "Romans":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(17):
+                bookChapter = random.choice(Romans)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Corinthians"""
+        if tempList5[0] == "1 Corinthians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(17):
+                bookChapter = random.choice(Corinthians_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Corinthians"""
+        if tempList5[0] == "2 Corinthians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(14):
+                bookChapter = random.choice(Corinthians_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Galatians"""
+        if tempList5[0] == "Galatians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(7):
+                bookChapter = random.choice(Galatians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Ephesians"""
+        if tempList5[0] == "Ephesians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(7):
+                bookChapter = random.choice(Ephesians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Philippians"""
+        if tempList5[0] == "Philippians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Philippians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Colossians"""
+        if tempList5[0] == "Colossians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Colossians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Thessalonians"""
+        if tempList5[0] == "1 Thessalonians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(Thessalonians_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Thessalonians"""
+        if tempList5[0] == "2 Thessalonians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Thessalonians_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Timothy"""
+        if tempList5[0] == "1 Timothy":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(7):
+                bookChapter = random.choice(Timothy_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Timothy"""
+        if tempList5[0] == "2 Timothy":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Timothy_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Titus"""
+        if tempList5[0] == "Titus":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Titus)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Philemon"""
+        if tempList5[0] == "Philemon":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(Philemon)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Hebrews"""
+        if tempList5[0] == "Hebrews":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(14):
+                bookChapter = random.choice(Hebrews)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """James"""
+        if tempList5[0] == "James":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(James)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Peter"""
+        if tempList5[0] == "1 Peter":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(Peter_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Peter"""
+        if tempList5[0] == "2 Peter":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Peter_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 John"""
+        if tempList5[0] == "1 John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(John_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 John"""
+        if tempList5[0] == "2 John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(John_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """3 John"""
+        if tempList5[0] == "3 John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(John_3)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Jude"""
+        if tempList5[0] == "Jude":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(Jude)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Revelation"""
+        if tempList5[0] == "Revelation":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(23):
+                bookChapter = random.choice(Revelation)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+    # If user typed "N" for New Testament
     elif testament == "N":
+        print("=======================================================================================")
         print("Selected: New Testament")
+        bList = []
+        for b in newTest:
+            for i in range(28):
+                bk = random.choice(newTest)
+            bList.append(bk)
+            # print(bList)
+            """Returns only one of the most occurring items"""
+            most1 = max(bList, key=bList.count)
+            # print(most1)
+            tempList.append(most1)
+            # print(tempList)
+            most2 = max(tempList, key=tempList.count)
+            # print(most2)
+            tempList2.append(most2)
+            # print(tempList2)
+            most3 = max(tempList2, key=tempList2.count)
+            # print(most3)
+            tempList3.append(most3)
+            # print(tempList3)
+            most4 = max(tempList3, key=tempList3.count)
+            tempList4.append(most4)
+            # print(tempList4)
+            most5 = max(tempList4, key=tempList4.count)
+            tempList5.append(most5)
+        """Prints chosen Book."""
+        print("Book: " + tempList5[0])
+
+        """The Below Block is for choosing a Chapter in Matthew."""
+        if tempList5[0] == "Matthew":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(29):
+                bookChapter = random.choice(Matthew)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Mark"""
+        if tempList5[0] == "Mark":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(17):
+                bookChapter = random.choice(Mark)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Luke"""
+        if tempList5[0] == "Luke":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(25):
+                bookChapter = random.choice(Luke)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """John"""
+        if tempList5[0] == "John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(22):
+                bookChapter = random.choice(John)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Acts"""
+        if tempList5[0] == "Acts":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(29):
+                bookChapter = random.choice(Acts)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Romans"""
+        if tempList5[0] == "Romans":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(17):
+                bookChapter = random.choice(Romans)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Corinthians"""
+        if tempList5[0] == "1 Corinthians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(17):
+                bookChapter = random.choice(Corinthians_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Corinthians"""
+        if tempList5[0] == "2 Corinthians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(14):
+                bookChapter = random.choice(Corinthians_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Galatians"""
+        if tempList5[0] == "Galatians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(7):
+                bookChapter = random.choice(Galatians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Ephesians"""
+        if tempList5[0] == "Ephesians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(7):
+                bookChapter = random.choice(Ephesians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Philippians"""
+        if tempList5[0] == "Philippians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Philippians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Colossians"""
+        if tempList5[0] == "Colossians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Colossians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Thessalonians"""
+        if tempList5[0] == "1 Thessalonians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(Thessalonians_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Thessalonians"""
+        if tempList5[0] == "2 Thessalonians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Thessalonians_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Timothy"""
+        if tempList5[0] == "1 Timothy":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(7):
+                bookChapter = random.choice(Timothy_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Timothy"""
+        if tempList5[0] == "2 Timothy":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Timothy_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Titus"""
+        if tempList5[0] == "Titus":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Titus)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Philemon"""
+        if tempList5[0] == "Philemon":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(Philemon)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Hebrews"""
+        if tempList5[0] == "Hebrews":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(14):
+                bookChapter = random.choice(Hebrews)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """James"""
+        if tempList5[0] == "James":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(James)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Peter"""
+        if tempList5[0] == "1 Peter":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(Peter_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Peter"""
+        if tempList5[0] == "2 Peter":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Peter_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 John"""
+        if tempList5[0] == "1 John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(John_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 John"""
+        if tempList5[0] == "2 John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(John_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """3 John"""
+        if tempList5[0] == "3 John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(John_3)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Jude"""
+        if tempList5[0] == "Jude":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(Jude)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Revelation"""
+        if tempList5[0] == "Revelation":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(23):
+                bookChapter = random.choice(Revelation)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+    # Contains both the Old and New Testaments
     elif testament == "BOTH":
+        print("=======================================================================================")
         print("Selected: Old and New Testaments")
+        bList = []
+        for b in fullBible:
+            for i in range(67):
+                bk = random.choice(fullBible)
+            bList.append(bk)
+            # print(bList)
+            """Returns only one of the most occurring items"""
+            most1 = max(bList, key=bList.count)
+            # print(most1)
+            tempList.append(most1)
+            # print(tempList)
+            most2 = max(tempList, key=tempList.count)
+            # print(most2)
+            tempList2.append(most2)
+            # print(tempList2)
+            most3 = max(tempList2, key=tempList2.count)
+            # print(most3)
+            tempList3.append(most3)
+            # print(tempList3)
+            most4 = max(tempList3, key=tempList3.count)
+            tempList4.append(most4)
+            # print(tempList4)
+            most5 = max(tempList4, key=tempList4.count)
+            tempList5.append(most5)
+        """Prints chosen Book."""
+        print("Book: " + tempList5[0])
+
+        """The Below Block is for choosing a Chapter in Genesis."""
+        if tempList5[0] == "Genesis":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(51):
+                bookChapter = random.choice(Genesis)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Exodus"""
+        if tempList5[0] == "Exodus":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(41):
+                bookChapter = random.choice(Exodus)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Leviticus"""
+        if tempList5[0] == "Leviticus":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(28):
+                bookChapter = random.choice(Leviticus)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Numbers"""
+        if tempList5[0] == "Numbers":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(37):
+                bookChapter = random.choice(Numbers)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Deuteronomy"""
+        if tempList5[0] == "Deuteronomy":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(35):
+                bookChapter = random.choice(Deuteronomy)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Joshua"""
+        if tempList5[0] == "Joshua":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(25):
+                bookChapter = random.choice(Joshua)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Judges"""
+        if tempList5[0] == "Judges":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(22):
+                bookChapter = random.choice(Judges)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Ruth"""
+        if tempList5[0] == "Ruth":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Ruth)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Samuel"""
+        if tempList5[0] == "1 Samuel":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(32):
+                bookChapter = random.choice(Samuel_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Samuel"""
+        if tempList5[0] == "2 Samuel":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(25):
+                bookChapter = random.choice(Samuel_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Kings"""
+        if tempList5[0] == "1 Kings":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(23):
+                bookChapter = random.choice(Kings_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Kings"""
+        if tempList5[0] == "2 Kings":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(26):
+                bookChapter = random.choice(Kings_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Chronicles"""
+        if tempList5[0] == "1 Chronicles":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(30):
+                bookChapter = random.choice(Chronicles_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Chronicles"""
+        if tempList5[0] == "2 Chronicles":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(37):
+                bookChapter = random.choice(Chronicles_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Ezra"""
+        if tempList5[0] == "Ezra":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(11):
+                bookChapter = random.choice(Ezra)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Nehemiah"""
+        if tempList5[0] == "Nehemiah":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(14):
+                bookChapter = random.choice(Nehemiah)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Esther"""
+        if tempList5[0] == "Esther":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(11):
+                bookChapter = random.choice(Esther)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Job"""
+        if tempList5[0] == "Job":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(43):
+                bookChapter = random.choice(Job)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Psalms"""
+        if tempList5[0] == "Psalms":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(151):
+                bookChapter = random.choice(Psalm)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Proverbs"""
+        if tempList5[0] == "Proverbs":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(32):
+                bookChapter = random.choice(Proverbs)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Ecclesiastes"""
+        if tempList5[0] == "Ecclesiastes":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(13):
+                bookChapter = random.choice(Ecclesiastes)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Song of Solomon"""
+        if tempList5[0] == "Song of Solomon":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(9):
+                bookChapter = random.choice(Song_of_Solomon)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Isaiah"""
+        if tempList5[0] == "Isaiah":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(67):
+                bookChapter = random.choice(Isaiah)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Jeremiah"""
+        if tempList5[0] == "Jeremiah":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(53):
+                bookChapter = random.choice(Jeremiah)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Lamentations"""
+        if tempList5[0] == "Lamentations":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(Lamentations)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Ezekiel"""
+        if tempList5[0] == "Ezekiel":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(49):
+                bookChapter = random.choice(Ezekiel)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Daniel"""
+        if tempList5[0] == "Daniel":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(13):
+                bookChapter = random.choice(Daniel)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Hosea"""
+        if tempList5[0] == "Hosea":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(15):
+                bookChapter = random.choice(Hosea)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Joel"""
+        if tempList5[0] == "Joel":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Joel)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Amos"""
+        if tempList5[0] == "Amos":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(10):
+                bookChapter = random.choice(Amos)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Obadiah"""
+        if tempList5[0] == "Obadiah":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(Obadiah)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Jonah"""
+        if tempList5[0] == "Jonah":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Jonah)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Micah"""
+        if tempList5[0] == "Micah":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(8):
+                bookChapter = random.choice(Micah)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Nahum"""
+        if tempList5[0] == "Nahum":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Nahum)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Habakkuk"""
+        if tempList5[0] == "Habakkuk":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Habakkuk)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Zephaniah"""
+        if tempList5[0] == "Zephaniah":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Zephaniah)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Haggai"""
+        if tempList5[0] == "Haggai":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(3):
+                bookChapter = random.choice(Haggai)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Zechariah"""
+        if tempList5[0] == "Zechariah":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(15):
+                bookChapter = random.choice(Zechariah)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Malachi"""
+        if tempList5[0] == "Malachi":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Malachi)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """The Below Block is for choosing a Chapter in Matthew."""
+        if tempList5[0] == "Matthew":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(29):
+                bookChapter = random.choice(Matthew)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Mark"""
+        if tempList5[0] == "Mark":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(17):
+                bookChapter = random.choice(Mark)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Luke"""
+        if tempList5[0] == "Luke":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(25):
+                bookChapter = random.choice(Luke)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """John"""
+        if tempList5[0] == "John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(22):
+                bookChapter = random.choice(John)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Acts"""
+        if tempList5[0] == "Acts":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(29):
+                bookChapter = random.choice(Acts)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Romans"""
+        if tempList5[0] == "Romans":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(17):
+                bookChapter = random.choice(Romans)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Corinthians"""
+        if tempList5[0] == "1 Corinthians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(17):
+                bookChapter = random.choice(Corinthians_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Corinthians"""
+        if tempList5[0] == "2 Corinthians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(14):
+                bookChapter = random.choice(Corinthians_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Galatians"""
+        if tempList5[0] == "Galatians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(7):
+                bookChapter = random.choice(Galatians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Ephesians"""
+        if tempList5[0] == "Ephesians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(7):
+                bookChapter = random.choice(Ephesians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Philippians"""
+        if tempList5[0] == "Philippians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Philippians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Colossians"""
+        if tempList5[0] == "Colossians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Colossians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Thessalonians"""
+        if tempList5[0] == "1 Thessalonians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(Thessalonians_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Thessalonians"""
+        if tempList5[0] == "2 Thessalonians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Thessalonians_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Timothy"""
+        if tempList5[0] == "1 Timothy":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(7):
+                bookChapter = random.choice(Timothy_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Timothy"""
+        if tempList5[0] == "2 Timothy":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Timothy_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Titus"""
+        if tempList5[0] == "Titus":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Titus)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Philemon"""
+        if tempList5[0] == "Philemon":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(Philemon)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Hebrews"""
+        if tempList5[0] == "Hebrews":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(14):
+                bookChapter = random.choice(Hebrews)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """James"""
+        if tempList5[0] == "James":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(James)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Peter"""
+        if tempList5[0] == "1 Peter":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(Peter_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Peter"""
+        if tempList5[0] == "2 Peter":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Peter_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 John"""
+        if tempList5[0] == "1 John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(John_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 John"""
+        if tempList5[0] == "2 John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(John_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """3 John"""
+        if tempList5[0] == "3 John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(John_3)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Jude"""
+        if tempList5[0] == "Jude":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(Jude)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Revelation"""
+        if tempList5[0] == "Revelation":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(23):
+                bookChapter = random.choice(Revelation)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+    # Contains both the Old and New Testaments
     elif testament == "B":
+        print("=======================================================================================")
         print("Selected: Old and New Testaments")
-        print("----------------------------------------------------------------")
+        bList = []
+        for b in fullBible:
+            for i in range(67):
+                bk = random.choice(fullBible)
+            bList.append(bk)
+            # print(bList)
+            """Returns only one of the most occurring items"""
+            most1 = max(bList, key=bList.count)
+            # print(most1)
+            tempList.append(most1)
+            # print(tempList)
+            most2 = max(tempList, key=tempList.count)
+            # print(most2)
+            tempList2.append(most2)
+            # print(tempList2)
+            most3 = max(tempList2, key=tempList2.count)
+            # print(most3)
+            tempList3.append(most3)
+            # print(tempList3)
+            most4 = max(tempList3, key=tempList3.count)
+            tempList4.append(most4)
+            # print(tempList4)
+            most5 = max(tempList4, key=tempList4.count)
+            tempList5.append(most5)
+        """Prints chosen Book."""
+        print("Book: " + tempList5[0])
+
+        """The Below Block is for choosing a Chapter in Genesis."""
+        if tempList5[0] == "Genesis":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(51):
+                bookChapter = random.choice(Genesis)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Exodus"""
+        if tempList5[0] == "Exodus":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(41):
+                bookChapter = random.choice(Exodus)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Leviticus"""
+        if tempList5[0] == "Leviticus":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(28):
+                bookChapter = random.choice(Leviticus)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Numbers"""
+        if tempList5[0] == "Numbers":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(37):
+                bookChapter = random.choice(Numbers)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Deuteronomy"""
+        if tempList5[0] == "Deuteronomy":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(35):
+                bookChapter = random.choice(Deuteronomy)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Joshua"""
+        if tempList5[0] == "Joshua":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(25):
+                bookChapter = random.choice(Joshua)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Judges"""
+        if tempList5[0] == "Judges":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(22):
+                bookChapter = random.choice(Judges)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Ruth"""
+        if tempList5[0] == "Ruth":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Ruth)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Samuel"""
+        if tempList5[0] == "1 Samuel":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(32):
+                bookChapter = random.choice(Samuel_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Samuel"""
+        if tempList5[0] == "2 Samuel":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(25):
+                bookChapter = random.choice(Samuel_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Kings"""
+        if tempList5[0] == "1 Kings":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(23):
+                bookChapter = random.choice(Kings_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Kings"""
+        if tempList5[0] == "2 Kings":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(26):
+                bookChapter = random.choice(Kings_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Chronicles"""
+        if tempList5[0] == "1 Chronicles":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(30):
+                bookChapter = random.choice(Chronicles_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Chronicles"""
+        if tempList5[0] == "2 Chronicles":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(37):
+                bookChapter = random.choice(Chronicles_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Ezra"""
+        if tempList5[0] == "Ezra":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(11):
+                bookChapter = random.choice(Ezra)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Nehemiah"""
+        if tempList5[0] == "Nehemiah":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(14):
+                bookChapter = random.choice(Nehemiah)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Esther"""
+        if tempList5[0] == "Esther":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(11):
+                bookChapter = random.choice(Esther)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Job"""
+        if tempList5[0] == "Job":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(43):
+                bookChapter = random.choice(Job)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Psalms"""
+        if tempList5[0] == "Psalms":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(151):
+                bookChapter = random.choice(Psalm)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Proverbs"""
+        if tempList5[0] == "Proverbs":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(32):
+                bookChapter = random.choice(Proverbs)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Ecclesiastes"""
+        if tempList5[0] == "Ecclesiastes":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(13):
+                bookChapter = random.choice(Ecclesiastes)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Song of Solomon"""
+        if tempList5[0] == "Song of Solomon":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(9):
+                bookChapter = random.choice(Song_of_Solomon)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Isaiah"""
+        if tempList5[0] == "Isaiah":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(67):
+                bookChapter = random.choice(Isaiah)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Jeremiah"""
+        if tempList5[0] == "Jeremiah":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(53):
+                bookChapter = random.choice(Jeremiah)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Lamentations"""
+        if tempList5[0] == "Lamentations":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(Lamentations)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Ezekiel"""
+        if tempList5[0] == "Ezekiel":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(49):
+                bookChapter = random.choice(Ezekiel)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Daniel"""
+        if tempList5[0] == "Daniel":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(13):
+                bookChapter = random.choice(Daniel)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Hosea"""
+        if tempList5[0] == "Hosea":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(15):
+                bookChapter = random.choice(Hosea)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Joel"""
+        if tempList5[0] == "Joel":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Joel)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Amos"""
+        if tempList5[0] == "Amos":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(10):
+                bookChapter = random.choice(Amos)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Obadiah"""
+        if tempList5[0] == "Obadiah":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(Obadiah)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Jonah"""
+        if tempList5[0] == "Jonah":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Jonah)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Micah"""
+        if tempList5[0] == "Micah":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(8):
+                bookChapter = random.choice(Micah)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Nahum"""
+        if tempList5[0] == "Nahum":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Nahum)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Habakkuk"""
+        if tempList5[0] == "Habakkuk":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Habakkuk)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Zephaniah"""
+        if tempList5[0] == "Zephaniah":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Zephaniah)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Haggai"""
+        if tempList5[0] == "Haggai":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(3):
+                bookChapter = random.choice(Haggai)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Zechariah"""
+        if tempList5[0] == "Zechariah":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(15):
+                bookChapter = random.choice(Zechariah)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Malachi"""
+        if tempList5[0] == "Malachi":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Malachi)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """The Below Block is for choosing a Chapter in Matthew."""
+        if tempList5[0] == "Matthew":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(29):
+                bookChapter = random.choice(Matthew)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Mark"""
+        if tempList5[0] == "Mark":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(17):
+                bookChapter = random.choice(Mark)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Luke"""
+        if tempList5[0] == "Luke":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(25):
+                bookChapter = random.choice(Luke)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """John"""
+        if tempList5[0] == "John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(22):
+                bookChapter = random.choice(John)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Acts"""
+        if tempList5[0] == "Acts":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(29):
+                bookChapter = random.choice(Acts)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Romans"""
+        if tempList5[0] == "Romans":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(17):
+                bookChapter = random.choice(Romans)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Corinthians"""
+        if tempList5[0] == "1 Corinthians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(17):
+                bookChapter = random.choice(Corinthians_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Corinthians"""
+        if tempList5[0] == "2 Corinthians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(14):
+                bookChapter = random.choice(Corinthians_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Galatians"""
+        if tempList5[0] == "Galatians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(7):
+                bookChapter = random.choice(Galatians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Ephesians"""
+        if tempList5[0] == "Ephesians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(7):
+                bookChapter = random.choice(Ephesians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Philippians"""
+        if tempList5[0] == "Philippians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Philippians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Colossians"""
+        if tempList5[0] == "Colossians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Colossians)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Thessalonians"""
+        if tempList5[0] == "1 Thessalonians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(Thessalonians_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Thessalonians"""
+        if tempList5[0] == "2 Thessalonians":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Thessalonians_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Timothy"""
+        if tempList5[0] == "1 Timothy":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(7):
+                bookChapter = random.choice(Timothy_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Timothy"""
+        if tempList5[0] == "2 Timothy":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(5):
+                bookChapter = random.choice(Timothy_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Titus"""
+        if tempList5[0] == "Titus":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Titus)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Philemon"""
+        if tempList5[0] == "Philemon":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(Philemon)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Hebrews"""
+        if tempList5[0] == "Hebrews":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(14):
+                bookChapter = random.choice(Hebrews)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """James"""
+        if tempList5[0] == "James":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(James)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 Peter"""
+        if tempList5[0] == "1 Peter":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(Peter_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 Peter"""
+        if tempList5[0] == "2 Peter":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(4):
+                bookChapter = random.choice(Peter_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """1 John"""
+        if tempList5[0] == "1 John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(6):
+                bookChapter = random.choice(John_1)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """2 John"""
+        if tempList5[0] == "2 John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(John_2)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """3 John"""
+        if tempList5[0] == "3 John":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(John_3)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Jude"""
+        if tempList5[0] == "Jude":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(1):
+                bookChapter = random.choice(Jude)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
+
+        """Revelation"""
+        if tempList5[0] == "Revelation":
+            chList = []
+            chList2 = []
+            chList3 = []
+            chList4 = []
+            chList5 = []
+            chList6 = []
+            chList7 = []
+            for c in range(23):
+                bookChapter = random.choice(Revelation)
+                chList.append(bookChapter)
+                chM1 = max(chList, key=chList.count)
+                chList2.append(chM1)
+                chM2 = max(chList2, key=chList2.count)
+                chList3.append(chM2)
+                chM3 = max(chList3, key=chList3.count)
+                chList4.append(chM3)
+                chM4 = max(chList4, key=chList4.count)
+                chList5.append(chM4)
+                chM5 = max(chList5, key=chList5.count)
+                chList6.append(chM5)
+                chM6 = max(chList6, key=chList6.count)
+                chList7.append(chM6)
+            print("Chapter: " + str(chList7[0]))
 
     else:
         print("Please enter a valid option.")
 
     print("=======================================================================================")
+
     # if user wants to use again
     use_again = input("Go again? (Y/N): ")
     if use_again != "yes":
