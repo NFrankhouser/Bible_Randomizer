@@ -3,3 +3,6 @@ This Python program will ask the user if they want just the Old or New Testament
 in the random selection proccess for the Book. After a Book is selected, a random chapter from the book
 will be selected.
   **All sections now work.**
+
+You will need to import the following Python Library:
+**random**
